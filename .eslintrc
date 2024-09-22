@@ -1,0 +1,7 @@
+{
+    "extends": "kubevue/all",
+    "env": {
+        "browser": true,
+        "node": true
+    }
+}

@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": false,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "declaration": true,
+    // "declarationDir": "types",
+    "rootDir": "src",
+    "outDir": "out",
+    "sourceMap": true,
+    "pretty": true,
+    "skipLibCheck": true
+  },
+  "include": [
+		"src"
+	],
+  "exclude": [
+    "node_modules",
+    ".vscode-test"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@cloud-ui/u-sample.vue",
+  "description": "Cloud UI - USample",
+  "version": "0.1.0",
+  "author": "Rainfore <rainforest92@126.com>",
+  "main": "./index.js",
+  "repository": "kubevue/editors",
+  "homepage": "http://kubevue.github.io",
+  "bugs": {
+    "url": "http://github.com/kubevue/editors/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cloud",
+    "ui",
+    "component"
+  ],
+  "tags": [
+    "cloud",
+    "ui",
+    "component"
+  ],
+  "scripts": {
+    "doc": "vue-cli-service doc --port 9090",
+    "doc-build": "vue-cli-service doc-build",
+    "prepublishOnly": "npm run doc-build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/cli-service": "^3.10.0",
+    "vue": "^2.6.10",
+    "vue-cli-plugin-kubevue": "^0.6.2",
+    "vue-router": "^3.1.3",
+    "vue-template-compiler": "^2.6.10",
+    "cloud-ui.kubevue": "^0.4.12"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.10",
+    "cloud-ui.kubevue": "^0.4.12"
+  },
+  "kubevue": {
+    "type": "component"
+  }
+}
