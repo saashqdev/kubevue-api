@@ -45,7 +45,7 @@ exports.default = {
         if (this.config)
             return this.config;
         if (!fs.existsSync(rcPath)) {
-            fs.writeFileSync(rcPath, `platform: https://kubevue.163yun.com
+            fs.writeFileSync(rcPath, `platform: https://kubevue.s3.amazonaws.com
 registries:
   npm: https://registry.npmjs.org
 download_manager: npm

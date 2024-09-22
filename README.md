@@ -1,61 +1,54 @@
-# kubevue-api
+# ts-repo-boilerplate
 
-- [中文说明](README.zh-CN.md)
+- [README in English](README.md)
 
-A boilerplate for creating npm package repo.
+这是一个 npm 仓库模板。
 
 [![CircleCI][circleci-img]][circleci-url]
 [![NPM Version][npm-img]][npm-url]
 [![Dependencies][david-img]][david-url]
 [![NPM Download][download-img]][download-url]
 
-[circleci-img]: https://img.shields.io/circleci/project/github/kubevue/kubevue-api.svg?style=flat-square
-[circleci-url]: https://circleci.com/gh/kubevue/kubevue-api
-[npm-img]: http://img.shields.io/npm/v/kubevue-api.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/kubevue-api
-[david-img]: http://img.shields.io/david/kubevue/kubevue-api.svg?style=flat-square
-[david-url]: https://david-dm.org/kubevue/kubevue-api
-[download-img]: https://img.shields.io/npm/dm/kubevue-api.svg?style=flat-square
-[download-url]: https://npmjs.org/package/kubevue-api
+[circleci-img]: https://img.shields.io/circleci/project/github/necfe/ts-repo-boilerplate.svg?style=flat-square
+[circleci-url]: https://circleci.com/gh/necfe/ts-repo-boilerplate
+[npm-img]: http://img.shields.io/npm/v/ts-repo-boilerplate.svg?style=flat-square
+[npm-url]: http://npmjs.org/package/ts-repo-boilerplate
+[david-img]: http://img.shields.io/david/necfe/ts-repo-boilerplate.svg?style=flat-square
+[david-url]: https://david-dm.org/necfe/ts-repo-boilerplate
+[download-img]: https://img.shields.io/npm/dm/ts-repo-boilerplate.svg?style=flat-square
+[download-url]: https://npmjs.org/package/ts-repo-boilerplate
 
-## Example
+## 示例
 
-Show an easy example can attract readers quickly.
+展示一个简单的示例可以快速吸引读者。
 
-## Features
+## 特性
 
-Introduce some major features of this project.
+介绍一下这个项目主要的几个特性吧。
 
-- Feature 1
-- Feature 2
-- Feature 3
-
-## Install
+## 安装
 
 ``` shell
-npm install --save kubevue-api
+npm install --save-dev ts-repo-boilerplate
 ```
 
-## Modules
+## 选项
 
-### fs
+#### name
 
-文件系统
+某个功能的名称。
 
-### ms
+- Type: `string`
+- Default: `'hello'`
 
-物料系统
+#### auto
 
-### config
+是否自动做某件事。
 
-kubevue.config.js 相关
+- Type: `boolean`
+- Default: `'true'`
 
-### rc
-
-.kubevuerc 相关
-
-
-## Develop
+## 开发
 
 ### dev
 
@@ -75,14 +68,14 @@ npm run build
 npm run test
 ```
 
-## Changelog
+## 修改日志
 
-See [Releases](https://github.com/kubevue/kubevue-api/releases)
+See [Releases](https://github.com/necfe/ts-repo-boilerplate/releases)
 
-## Contributing
+## 贡献指南
 
 See [Contributing Guide](https://github.com/kubevue/DOCUMENTATION/issues/8)
 
-## License
+## 开源协议
 
 [MIT](LICENSE)

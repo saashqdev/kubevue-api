@@ -1,156 +1,156 @@
-### 基本用法
+### Basic Usage
 
-#### 路由模式
+#### Routing Mode
 
 ``` html
 <u-sidebar style="width: 200px;">
-    <u-sidebar-item>指南</u-sidebar-item>
-    <u-sidebar-item>概念</u-sidebar-item>
-    <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
+    <u-sidebar-item>Guide</u-sidebar-item>
+    <u-sidebar-item>Concept</u-sidebar-item>
+    <u-sidebar-item to="/cloud-ui">Components</u-sidebar-item>
 </u-sidebar>
 ```
 
-#### value模式
+#### value mode
 
 ``` html
 <u-sidebar value="3" :router="false" style="width: 200px;">
-    <u-sidebar-item value="1">指南</u-sidebar-item>
-    <u-sidebar-item value="2">概念</u-sidebar-item>
-    <u-sidebar-item value="3">组件</u-sidebar-item>
+    <u-sidebar-item value="1">Guide</u-sidebar-item>
+    <u-sidebar-item value="2">Concept</u-sidebar-item>
+    <u-sidebar-item value="3">Components</u-sidebar-item>
 </u-sidebar>
 ```
 
-### 只读、禁用、禁用某一项
+### Read-only, Disable, Disable an Item
 
 ``` html
 <u-grid-layout>
     <u-grid-layout-column :span="4">
         <u-sidebar disabled>
-            <u-sidebar-item>指南</u-sidebar-item>
-            <u-sidebar-item>概念</u-sidebar-item>
-            <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
+            <u-sidebar-item>Guide</u-sidebar-item>
+            <u-sidebar-item>Concept</u-sidebar-item>
+            <u-sidebar-item to="/cloud-ui">Components</u-sidebar-item>
         </u-sidebar>
     </u-grid-layout-column>
     <u-grid-layout-column :span="4">
         <u-sidebar>
-            <u-sidebar-item>指南</u-sidebar-item>
-            <u-sidebar-item disabled>概念</u-sidebar-item>
-            <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
+            <u-sidebar-item>Guide</u-sidebar-item>
+            <u-sidebar-item disabled>Concept</u-sidebar-item>
+            <u-sidebar-item to="/cloud-ui">Components</u-sidebar-item>
         </u-sidebar>
     </u-grid-layout-column>
 </u-grid-layout>
 ```
 
-### 分隔符
+### Separator
 
 ``` html
 <u-sidebar style="width: 200px;">
-    <u-sidebar-item>指南</u-sidebar-item>
-    <u-sidebar-item>概念</u-sidebar-item>
-    <u-sidebar-item>配置</u-sidebar-item>
+    <u-sidebar-item>Guide</u-sidebar-item>
+    <u-sidebar-item>Concept</u-sidebar-item>
+    <u-sidebar-item>Configuration</u-sidebar-item>
     <u-sidebar-divider></u-sidebar-divider>
-    <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
-    <u-sidebar-item to="/libraries">组件库</u-sidebar-item>
+    <u-sidebar-item to="/cloud-ui">Components</u-sidebar-item>
+    <u-sidebar-item to="/libraries">Components Library</u-sidebar-item>
 </u-sidebar>
 ```
 
-### 分组
+### Grouping
 
 ``` html
 <u-grid-layout>
     <u-grid-layout-row>
         <u-grid-layout-column :span="4">
-            <p>默认，无折叠功能</p>
+            <p>Default, No Folding Function</p>
             <u-sidebar>
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Link</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Label</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Form">
-                    <u-sidebar-item>单行输入</u-sidebar-item>
-                    <u-sidebar-item>多行输入</u-sidebar-item>
-                    <u-sidebar-item>选择框</u-sidebar-item>
-                    <u-sidebar-item>表单</u-sidebar-item>
+                    <u-sidebar-item>Single-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Multi-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Selection Box</u-sidebar-item>
+                    <u-sidebar-item>Form</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
-            <p>开启折叠功能</p>
+            <p>Turn On the Folding Function</p>
             <u-sidebar collapsible>
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Link</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Label</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation" expanded disabled>
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Form" :collapsible="false">
-                    <u-sidebar-item>单行输入</u-sidebar-item>
-                    <u-sidebar-item>多行输入</u-sidebar-item>
-                    <u-sidebar-item>选择框</u-sidebar-item>
-                    <u-sidebar-item>表单</u-sidebar-item>
+                    <u-sidebar-item>Single-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Multi-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Selection Box</u-sidebar-item>
+                    <u-sidebar-item>Form</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
-            <p>手风琴模式</p>
+            <p>Accordion Mode</p>
             <u-sidebar collapsible accordion>
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Link</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Label</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Form">
-                    <u-sidebar-item>单行输入</u-sidebar-item>
-                    <u-sidebar-item>多行输入</u-sidebar-item>
-                    <u-sidebar-item>选择框</u-sidebar-item>
-                    <u-sidebar-item>表单</u-sidebar-item>
+                    <u-sidebar-item>Single-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Multi-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Selection Box</u-sidebar-item>
+                    <u-sidebar-item>Form</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
     </u-grid-layout-row>
     <u-grid-layout-row>
         <u-grid-layout-column :span="4">
-            <p>触发方式：整行点击均可触发（默认）</p>
+            <p>Trigger Method: Clicking the Entire Row can Trigger (default)</p>
             <u-sidebar collapsible expand-trigger="click">
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Link</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Label</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
-            <p>触发方式：仅点击小箭头时触发</p>
+            <p>Trigger Method: Trigger Only when Clicking the Small Arrow</p>
             <u-sidebar collapsible expand-trigger="click-expander">
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Link</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Label</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
@@ -158,29 +158,29 @@
 </u-grid-layout>
 ```
 
-### 颜色扩展
+### Color Extensions
 
 ``` html
 <u-grid-layout>
     <u-grid-layout-row>
         <u-grid-layout-column :span="4">
             <u-sidebar style="width: 200px;">
-                <u-sidebar-item>指南</u-sidebar-item>
-                <u-sidebar-item>概念</u-sidebar-item>
-                <u-sidebar-item>配置</u-sidebar-item>
+                <u-sidebar-item>Guide</u-sidebar-item>
+                <u-sidebar-item>Concept</u-sidebar-item>
+                <u-sidebar-item>Configuration</u-sidebar-item>
                 <u-sidebar-divider></u-sidebar-divider>
-                <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
-                <u-sidebar-item to="/libraries">组件库</u-sidebar-item>
+                <u-sidebar-item to="/cloud-ui">Components</u-sidebar-item>
+                <u-sidebar-item to="/libraries">Components Library</u-sidebar-item>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
             <u-sidebar style="width: 200px;" color="inverse">
-                <u-sidebar-item>指南</u-sidebar-item>
-                <u-sidebar-item>概念</u-sidebar-item>
-                <u-sidebar-item>配置</u-sidebar-item>
+                <u-sidebar-item>Guide</u-sidebar-item>
+                <u-sidebar-item>Concept</u-sidebar-item>
+                <u-sidebar-item>Configuration</u-sidebar-item>
                 <u-sidebar-divider></u-sidebar-divider>
-                <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
-                <u-sidebar-item to="/libraries">组件库</u-sidebar-item>
+                <u-sidebar-item to="/cloud-ui">Components</u-sidebar-item>
+                <u-sidebar-item to="/libraries">Components Library</u-sidebar-item>
             </u-sidebar>
         </u-grid-layout-column>
     </u-grid-layout-row>

@@ -11,6 +11,6 @@ export default [
     '|',
     {
         title: '链接测试',
-        href: 'https://c.163yun.com/',
+        href: 'https://c.s3.amazonaws.com/',
     },
 ];
