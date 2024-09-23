@@ -2,7 +2,7 @@
   "name": "kubevue-api",
   "description": "kubevue Node.js API",
   "version": "0.7.38",
-  "author": "Forrest <rainforest92@126.com>",
+  "author": "Kubeworkz <kubeworkz@gmail.com>",
   "scripts": {
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",

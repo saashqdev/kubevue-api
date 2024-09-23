@@ -1,6 +1,6 @@
 <template>
     <div>
-        <u-page-summary>这里是 tab 列表，有个 tab 下面有一个不同的页面</u-page-summary>
+        <u-page-summary>Here is the tab list, there is a different page under one tab</u-page-summary>
         <u-tabs router>
             <u-tab v-for="tab in tabs" :title="tab.title" :to="tab.to" :key="tab.to"></u-tab>
         </u-tabs>
@@ -13,15 +13,15 @@ export default {
         return {
             tabs: [
                 {
-                    title: '列表页',
+                    title: 'List Page',
                     to: '/demo/list/tabs/list',
                 },
                 {
-                    title: '本地分页',
+                    title: 'Local Paging',
                     to: '/demo/list/tabs/localList',
                 },
                 {
-                    title: '列表页(无分页)',
+                    title: 'List Page (no pagination)',
                     to: '/demo/list/tabs/noPageList',
                 },
 

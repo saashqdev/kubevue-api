@@ -1,7 +1,7 @@
 export default {
     module: 'overview',
     sidebar: {
-        title: '总览',
+        title: 'Overview',
         to: '/overview',
     },
 };

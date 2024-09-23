@@ -1,30 +1,30 @@
 <template>
     <u-linear-layout direction="vertical" gap="small">
         <u-page-summary>
-            常见的路由组织方式页
+            Common routing organization pages
         </u-page-summary>
         <u-linear-layout type="flex" justify="end">
-            <u-search v-model="form.search" placeholder="搜索"></u-search>
+            <u-search v-model="form.search" placeholder="search"></u-search>
         </u-linear-layout>
         <u-table-view :class="$style.tableView" :data="list" :loading="loading" value-field="name">
-            <u-table-view-column title="消息标题">
+            <u-table-view-column title="Message Title">
                 <template slot="cell" slot-scope="{ item }">
                     {{ item.name }}
                 </template>
             </u-table-view-column>
-            <u-table-view-column title="时间">
+            <u-table-view-column title="Time">
                 <template slot="cell" slot-scope="{ item }">
                     {{ item.time | dateFormat }}
                 </template>
             </u-table-view-column>
-            <u-table-view-column title="操作">
+            <u-table-view-column title="Operation">
                 <template slot="cell" slot-scope="scope">
                     <u-linear-layout>
                         <u-link :to="{name: 'demo.router.detail', query: {id: scope.item.ch_name}}">
-                            查看详情
+                            Check the details
                         </u-link>
                         <u-link @click="deleteItem">
-                            删除
+                            Delete
                         </u-link>
                     </u-linear-layout>
                 </template>

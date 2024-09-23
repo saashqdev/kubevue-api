@@ -1,28 +1,28 @@
 <template>
     <u-linear-layout direction="vertical" gap="small">
         <u-page-summary>
-            系统更新的最新消息。相关描述可以查看<u-link href="https://kubevue.github.io/cloud-ui/components/u-actions">链接</u-link>
+            Latest news on system updates. Related descriptions can be found in <u-link href="https://kubevue.github.io/cloud-ui/components/u-actions">Link</u-link>
         </u-page-summary>
         <u-linear-layout>
             <u-button square icon="refresh" @click="refresh"></u-button>
         </u-linear-layout>
         <u-table-view :class="$style.tableView" :data="list" :loading="loading" value-field="name" :values="selected">
             <u-table-view-column type="checkbox" width="8%"></u-table-view-column>
-            <u-table-view-column title="消息标题">
+            <u-table-view-column title="Message Title">
                 <template slot="cell" slot-scope="{ item }">
                     {{ item.name }}
                 </template>
             </u-table-view-column>
-            <u-table-view-column title="时间">
+            <u-table-view-column title="Time">
                 <template slot="cell" slot-scope="{ item }">
                     {{ item.time | dateFormat }}
                 </template>
             </u-table-view-column>
-            <u-table-view-column title="操作">
+            <u-table-view-column title="Operation">
                 <template slot="cell" slot-scope="scope">
                     <u-linear-layout>
                         <u-link :to="{ path: '/notice/detail', query: {id: scope.item.ch_name}}">
-                            查看详情
+                            Check the details
                         </u-link>
                     </u-linear-layout>
                 </template>
@@ -38,8 +38,8 @@
         </div>
         <u-footbar :position="batchBtnPos">
             <u-linear-layout>
-                <span>已选择 {{ selected.length }} 条</span>
-                <u-button :disabled="!allowBatchDelete" @click="batchDelete">删除</u-button>
+                <span>{{ selected.length }} items selected</span>
+                <u-button :disabled="!allowBatchDelete" @click="batchDelete">Delete</u-button>
             </u-linear-layout>
         </u-footbar>
     </u-linear-layout>
@@ -82,10 +82,10 @@ export default {
             });
         },
         batchDelete() {
-            this.$confirm(`确认删除 ${this.selected.join(',')} 实例吗？`, '删除确认').then(() => {
+            this.$confirm(`Confirm to delete ${this.selected.join(',')} instance?`, 'Delete confirmation').then(() => {
                 this.refresh();
             }, () => {
-                console.log('取消删除');
+                console.log('Cancel deletion');
             });
         },
     },

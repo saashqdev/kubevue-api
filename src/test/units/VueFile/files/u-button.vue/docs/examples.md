@@ -1,6 +1,6 @@
-### 基本用法
+### Basic Usage
 
-按钮有四种类型：主按钮、次按钮、虚线按钮、危险按钮。主按钮在同一个操作区域最多出现一次。
+There are four types of buttons: primary button, secondary button, dashed button, and danger button. The main button can appear at most once in the same operating area.
 
 ``` html
 <u-linear-layout>
@@ -11,9 +11,9 @@
 </u-linear-layout>
 ```
 
-### 设置形状
+### Set Shape
 
-按钮有四种形状：默认、圆角、方形、圆形，使用`shape`属性来设置。
+Buttons have four shapes: default, rounded corners, square, and circle, which are set using the `shape` attribute.
 
 ``` html
 <u-linear-layout gap="small">
@@ -28,9 +28,9 @@
 </u-linear-layout>
 ```
 
-### 禁用状态
+### Disabled State
 
-按钮在禁用状态下，不会响应点击事件。
+When the button is disabled, it will not respond to click events.
 
 ``` html
 <u-linear-layout>
@@ -41,9 +41,9 @@
 </u-linear-layout>
 ```
 
-### 设置尺寸
+### Set Size
 
-按钮有最小、小、正常、大四种尺寸，通过`size`属性设置。
+Buttons have four sizes: minimum, small, normal, and large, which are set through the `size` attribute.
 
 ``` html
 <u-linear-layout direction="vertical">
@@ -81,9 +81,9 @@
     <u-button size="huge" shape="circle" icon="refresh"></u-button>
 </u-linear-layout> -->
 
-### 块级展示
+### Block Level Display
 
-使用`display="block"`可以快速将按钮宽度充满整行。
+Use `display="block"` to quickly fill the width of the button to fill the entire row.
 
 ``` html
 <u-linear-layout direction="vertical" gap="small">
@@ -94,28 +94,28 @@
 </u-linear-layout>
 ```
 
-### 图标
+### Icon
 
-使用`icon`属性添加图标。
+Add an icon using the `icon` property.
 
 ``` html
 <u-linear-layout>
-    <u-button color="primary" icon="create">创建实例</u-button>
-    <u-button color="primary" icon="create" disabled>创建实例</u-button>
-    <u-button color="primary" icon="success">创建成功</u-button>
+    <u-button color="primary" icon="create">Create Instance</u-button>
+    <u-button color="primary" icon="create" disabled>Create Instance</u-button>
+    <u-button color="primary" icon="success">Created Successfully</u-button>
     <u-button shape="square" icon="refresh"></u-button>
 </u-linear-layout>
 ```
 
-### 加载中
+### Loading
 
-通过设置`loading`属性让按钮处于加载状态。
+Put the button in the loading state by setting the `loading` attribute.
 
 ``` vue
 <template>
 <u-linear-layout>
-    <u-button color="primary" loading>创建实例</u-button>
-    <u-button color="primary" icon="create" loading disabled>创建实例</u-button>
+    <u-button color="primary" loading>Create Instance</u-button>
+    <u-button color="primary" icon="create" loading disabled>Create Instance</u-button>
     <u-button color="primary" shape="square" icon="refresh"
         :loading="loading" :disabled="loading"
         @click="loading = true">
@@ -133,14 +133,14 @@ export default {
 </script>
 ```
 
-### 链接
+### Link
 
-在按钮上可以方便添加链接或路由，类似`<router-link>`。具有 href、target、to 等属性。
+You can easily add links or routes on the button, similar to `<router-link>`. Has href, target, to and other attributes.
 
 ``` html
 <u-linear-layout>
-    <u-button color="primary" href="https://kubevue.github.io" target="_blank">打开新窗口</u-button>
-    <u-button to="/cloud-ui/components/u-link">路由跳转</u-button>
-    <u-button color="primary" href="https://kubevue.github.io" disabled>禁用链接</u-button>
+    <u-button color="primary" href="https://kubevue.github.io" target="_blank">Open New Window</u-button>
+    <u-button to="/cloud-ui/components/u-link">Route Jump</u-button>
+    <u-button color="primary" href="https://kubevue.github.io" disabled>Disable Link</u-button>
 </u-linear-layout>
 ```

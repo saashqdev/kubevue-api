@@ -6,14 +6,14 @@
             </div>
             <div slot="act">
                 <u-button :to="{name: 'demo.router.setting', query: {id: $route.query.id}}">
-                    设置
+                    set up
                 </u-button>
             </div>
         </u-head-card>
         <div>
             <u-tabs router>
-                <u-tab title="详细信息" :to="{path:'/demo/router/detail/info', query: {id: $route.query.id}}"></u-tab>
-                <u-tab title="监控" :to="{path:'/demo/router/detail/monitor', query: {id: $route.query.id}}"></u-tab>
+                <u-tab title="Details" :to="{path:'/demo/router/detail/info', query: {id: $route.query.id}}"></u-tab>
+                <u-tab title="Monitoring" :to="{path:'/demo/router/detail/monitor', query: {id: $route.query.id}}"></u-tab>
             </u-tabs>
             <div>
                 <router-view></router-view>
@@ -45,8 +45,8 @@ export default {
         infoMessage() {
             const detail = this.detail;
             return [
-                {
-                    title: '名称',
+            {
+                    title: 'Name',
                     value: detail.name,
                 },
                 {
@@ -54,7 +54,7 @@ export default {
                     value: detail.id,
                 },
                 {
-                    title: '时间',
+                    title: 'Time',
                     value: detail.time,
                 },
             ];
@@ -67,7 +67,7 @@ export default {
         getHostZone() {
             setTimeout(() => {
                 this.detail = {
-                    name: 'test',
+                    name: 'Test',
                     id: (Math.random() + '').replace('.', ''),
                     time: Vue.filter('dateFormat')(new Date() - 0),
                 };

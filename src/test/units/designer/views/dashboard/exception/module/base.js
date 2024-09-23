@@ -1,7 +1,7 @@
 export default {
     module: 'exception',
     sidebar: {
-        title: '异常页',
+        title: 'Exception Page',
         children: [
             {
                 title: '404',

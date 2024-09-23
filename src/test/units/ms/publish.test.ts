@@ -9,16 +9,16 @@ describe('ms.publishBlock', () => {
             description: 'My block for test',
             labels: 'test,block',
             homepage: `https://kubevue.s3.amazonaws.com/#/block/s-test-block.vue`,
-            author: 'Forrest <rainforest92@126.com>',
-            repository: `https://github.com/kubevue/cloud-ui/tree/master/src/blocks/s-test-block.vue`,
-            title: '测试区块',
+            author: 'Kubeworkz <kubeworkz@gmail.com>',
+            repository: `https://github.com/saashqdev/cloud-ui/tree/master/src/blocks/s-test-block.vue`,
+            title: 'Test Block',
             category: 'info',
             base: 'vue',
             ui: `cloud-ui.kubevue`,
             screenshots: '',
             registry: 'https://registry.npmjs.org',
             access: 2,
-            team: '网易云计算前端'
+            team: 'Kubeworkz Cloud Computing Front End'
         };
 
         const result = await ms.publishBlock(params);
@@ -42,9 +42,9 @@ describe('ms.publishComponent', () => {
             description: 'My component for test',
             labels: 'test,component',
             homepage: `https://kubevue.s3.amazonaws.com/#/component/s-test-component.vue`,
-            author: 'Forrest <rainforest92@126.com>',
-            repository: `https://github.com/kubevue/cloud-ui/tree/master/src/components/s-test-block.vue`,
-            title: '测试组件',
+            author: 'Kubeworkz <kubeworkz@gmail.com>',
+            repository: `https://github.com/saashqdev/cloud-ui/tree/master/src/components/s-test-block.vue`,
+            title: 'Test component',
             category: 'info',
             base: 'vue',
             ui: `cloud-ui.kubevue`,
@@ -52,7 +52,7 @@ describe('ms.publishComponent', () => {
             blocks: '[{}]',
             registry: 'https://registry.npmjs.org',
             access: 2,
-            team: '网易云计算前端'
+            team: 'Kubeworkz Cloud Computing Front End'
         };
 
         const result = await ms.publishComponent(params);

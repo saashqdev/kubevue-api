@@ -1,14 +1,14 @@
 <template>
     <div>
-        <u-info-list-group title="基本信息" column="3">
-            <u-info-list-item label="名称">{{ detail.name }}</u-info-list-item>
+        <u-info-list-group title="Basic Information" column="3">
+            <u-info-list-item label="Name">{{ detail.name }}</u-info-list-item>
             <u-info-list-item label="ID">{{ detail.id }}</u-info-list-item>
-            <u-info-list-item label="时间">{{ detail.time }}</u-info-list-item>
+            <u-info-list-item label="Time">{{ detail.time }}</u-info-list-item>
         </u-info-list-group>
-        <u-info-list-group title="基本信息" column="3">
-            <u-info-list-item label="名称">{{ detail.name }}</u-info-list-item>
+        <u-info-list-group title="Basic Information" column="3">
+            <u-info-list-item label="Name">{{ detail.name }}</u-info-list-item>
             <u-info-list-item label="ID">{{ detail.id }}</u-info-list-item>
-            <u-info-list-item label="时间">{{ detail.time }}</u-info-list-item>
+            <u-info-list-item label="Time">{{ detail.time }}</u-info-list-item>
         </u-info-list-group>
     </div>
 </template>

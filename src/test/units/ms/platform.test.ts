@@ -4,7 +4,7 @@ import * as ms from '../../../ms';
 
 describe('ms.teamExist', () => {
     it('should check team existing', async () => {
-        let result = await ms.teamExist('网易云计算前端');
+        let result = await ms.teamExist('Kubeworkz Cloud Computing Front End');
         expect(result).to.be.true;
     });
 });

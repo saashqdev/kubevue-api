@@ -5,7 +5,7 @@
                 <u-link
                     :class="noticeActive ? $style.active : ''"
                     to="/notice"
-                    title="通知">
+                    title="Notification">
                     <i-icon name="notice" :class="$style.icon"></i-icon>
                 </u-link>
             </u-badge>
@@ -17,8 +17,8 @@
             </template>
             <template #default>
                 <u-navbar-menu>
-                    <u-navbar-menu-item to="/account/center">个人中心</u-navbar-menu-item>
-                    <u-navbar-menu-item @click="logout">安全退出</u-navbar-menu-item>
+                    <u-navbar-menu-item to="/account/center">Personal Center</u-navbar-menu-item>
+                    <u-navbar-menu-item @click="logout">Safe Exit</u-navbar-menu-item>
                 </u-navbar-menu>
             </template>
         </u-navbar-dropdown>
@@ -46,7 +46,7 @@ export default {
     },
     methods: {
         logout() {
-            this.$confirm(`确定退出登录吗？`, '提示').then(() => {
+            this.$confirm(`Are you sure you want to log out?`, 'prompt').then(() => {
                 location.reload();
             });
         },

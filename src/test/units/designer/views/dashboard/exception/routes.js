@@ -10,7 +10,7 @@ export default {
             name: '404',
             component: Exception404,
             meta: {
-                title: '抱歉，你访问的页面不存在。',
+                title: 'Sorry, the page you visited does not exist.',
             },
         },
         {
@@ -18,7 +18,7 @@ export default {
             name: '500',
             component: Exception500,
             meta: {
-                title: '抱歉，服务出现错误。',
+                title: 'Sorry, a service error occurred.',
             },
         },
     ],

@@ -4,13 +4,13 @@ export default [
     'exception',
     '|',
     {
-        title: '禁用测试',
+        title: 'Disable Test',
         to: '/disabled',
         disabled: true,
     },
     '|',
     {
-        title: '链接测试',
+        title: 'Link Test',
         href: 'https://c.s3.amazonaws.com/',
     },
 ];

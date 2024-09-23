@@ -34,7 +34,7 @@ export default {
     data() {
         return {
             logo: {
-                sub: '模板',
+                sub: 'Template',
             },
             userInfo: {
                 username: 'username',
@@ -46,12 +46,12 @@ export default {
                         'https://kubevue.github.io/cloud-ui/components/quickstart',
                 },
                 {
-                    title: 'kubevue 官网',
+                    title: 'Kubevue official website',
                     href: 'https://kubevue.github.io',
                 },
                 '|',
                 {
-                    title: '模板文档',
+                    title: 'Template Document',
                     href: 'https://kubevue-templates.github.io/cloud-admin-site',
                 },
                 {

@@ -1,12 +1,12 @@
 <template>
     <u-desc-list>
-        <u-desc-list-group title="安全信息">
-            <u-desc-list-item label="安全手机">138****8888 <u-link @click="updateSecurityMobile()">修改</u-link></u-desc-list-item>
-            <u-desc-list-item label="安全邮箱">dev****p@163.com <u-link @click="updateSecurityEmail()">修改</u-link></u-desc-list-item>
+        <u-desc-list-group title="Security Information">
+            <u-desc-list-item label="Security Mobile">138****8888 <u-link @click="updateSecurityMobile()">Modify</u-link></u-desc-list-item >
+            <u-desc-list-item label="Security Email">dev****p@gmail.com <u-link @click="updateSecurityEmail()">Modify</u-link></u-desc -list-item>
         </u-desc-list-group>
-        <u-desc-list-group title="账号安全">
-            <u-desc-list-item label="登录密码">
-                <u-link @click="updatePassword()">修改</u-link>
+        <u-desc-list-group title="Account Security">
+            <u-desc-list-item label="Login Password">
+                <u-link @click="updatePassword()">Modify</u-link>
             </u-desc-list-item>
         </u-desc-list-group>
     </u-desc-list>
@@ -20,13 +20,13 @@ export default {
     },
     methods: {
         updateSecurityMobile() {
-            this.$toast.show('修改安全手机');
+            this.$toast.show('Modify safe phone');
         },
         updateSecurityEmail() {
-            this.$toast.show('修改安全邮箱');
+            this.$toast.show('Modify secure email');
         },
         updatePassword() {
-            this.$toast.show('修改登录密码');
+            this.$toast.show('Change login password');
         },
     },
 };

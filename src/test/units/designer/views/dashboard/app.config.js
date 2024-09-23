@@ -1,4 +1,4 @@
 export default {
-    title: '网易云',
+    title: 'Kubeworkz Cloud',
     name: 'demo.cloud-admin-lite',
 };

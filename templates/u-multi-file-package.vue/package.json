@@ -2,7 +2,7 @@
   "name": "@cloud-ui/u-sample.vue",
   "description": "Cloud UI - USample",
   "version": "0.1.0",
-  "author": "Rainfore <rainforest92@126.com>",
+  "author": "Rainfore <kubeworkz@gmail.com>",
   "main": "./index.js",
   "repository": "kubevue/editors",
   "homepage": "http://kubevue.github.io",

@@ -56,7 +56,7 @@ describe('designer', () => {
     //     //     routePath: module0View.routePath,
     //     // }, {
     //     //     name: 'leaf',
-    //     //     title: '页面',
+    //     //     title: 'Page',
     //     // })
     //     // await designer.removeView({
     //     //     fullPath: views[0].fullPath,

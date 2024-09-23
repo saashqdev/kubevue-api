@@ -2,7 +2,7 @@ export default {
     path: 'account',
     component: () => import(/* webpackChunkName: 'account' */ './views/index.vue'),
     meta: {
-        crumb: '账号',
+        crumb: 'Account',
     },
 
     children: [
@@ -16,8 +16,8 @@ export default {
             name: 'account.center',
             component: () => import(/* webpackChunkName: 'account' */ './views/center.vue'),
             meta: {
-                title: '个人中心',
-                crumb: '个人中心',
+                title: 'Personal Center',
+                crumb: 'Personal center',
             },
         },
 
@@ -26,8 +26,8 @@ export default {
             name: 'account.setting',
             component: () => import(/* webpackChunkName: 'account' */ './views/setting.vue'),
             meta: {
-                title: '个人设置',
-                crumb: '个人设置',
+                title: 'Personal Settings',
+                crumb: 'Personal settings',
             },
         },
 
@@ -36,15 +36,15 @@ export default {
             name: 'account.security',
             component: () => import(/* webpackChunkName: 'account' */ './views/security.vue'),
             meta: {
-                title: '安全设置',
-                crumb: '安全设置',
+                title: 'Security Settings',
+                crumb: 'Security settings',
             },
         },
 
         {
             path: 'leaf',
             component: () => import(/* webpackChunkName: 'account' */ './views/leaf.vue'),
-            meta: { title: '页面' },
+            meta: { title: 'Page' },
         },
     ],
 };

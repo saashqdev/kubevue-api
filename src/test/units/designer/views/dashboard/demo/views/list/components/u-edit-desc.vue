@@ -1,6 +1,6 @@
 <template>
-    <u-modal title="查看分类" @ok="modalOK" @cancel="modalCancel"
-        ok-button="确认" cancel-button="取消" :visible.sync="show"
+    <u-modal title="View Category" @ok="modalOK" @cancel="modalCancel"
+        ok-button="Confirm" cancel-button="Cancel" :visible.sync="show"
         icon="info">
         <template v-if="detail">
             {{ detail.cate_sname }}

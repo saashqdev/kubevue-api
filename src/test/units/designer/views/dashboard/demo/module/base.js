@@ -1,23 +1,23 @@
 export default {
     module: 'demo',
     sidebar: {
-        title: 'demo',
+        title: 'Demo',
         children: [
             {
                 subnav: [
                     {
-                        title: '列表',
+                        title: 'List',
                         children: [
                             {
-                                title: '基础列表',
+                                title: 'Basic List',
                                 to: '/demo/list/basic',
                             },
                             {
-                                title: '本地列表',
+                                title: 'Local List',
                                 to: '/demo/list/localList',
                             },
                             {
-                                title: 'Tab 列表',
+                                title: 'Tab List',
                                 to: '/demo/list/tabs',
                             },
                         ],
@@ -27,10 +27,10 @@ export default {
             {
                 subnav: [
                     {
-                        title: '路由',
+                        title: 'Routing',
                         children: [
                             {
-                                title: '基础路由',
+                                title: 'Basic Routing',
                                 to: '/demo/router/list',
                             },
                         ],
@@ -40,14 +40,14 @@ export default {
             {
                 subnav: [
                     {
-                        title: '表单',
+                        title: 'Form',
                         children: [
                             {
-                                title: '基础表单',
+                                title: 'Basic Form',
                                 to: '/demo/form/basic',
                             },
                             {
-                                title: '设置页',
+                                title: 'Settings Page',
                                 to: '/demo/form/setting',
                             },
                         ],
@@ -57,10 +57,10 @@ export default {
             {
                 subnav: [
                     {
-                        title: '详情页',
+                        title: 'Details Page',
                         children: [
                             {
-                                title: '详情页',
+                                title: 'Details Page',
                                 to: '/demo/detail',
                             },
                         ],
@@ -70,7 +70,7 @@ export default {
             {
                 subnav: [
                     {
-                        title: '微前端',
+                        title: 'Micro Frontend',
                         children: [
                             {
                                 title: 'cloud-admin-1',

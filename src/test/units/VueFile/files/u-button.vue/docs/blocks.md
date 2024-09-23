@@ -1,51 +1,48 @@
-### 主要按钮 ~~test~~
+### Main Button Test
 
 ``` html
-<u-button color="primary">主要按钮</u-button>
+<u-button color="primary">Primary Button</u-button>
 ```
 
-### 次要按钮
+### Secondary Button
 
 ``` html
-<u-button>次要按钮</u-button>
+<u-button>Secondary Button</u-button>
 ```
 
-### 创建按钮
+### Create Button
 
-带加号[alink](#aaa)图标的创建按钮。
+Create button with the plus sign [alink](#aaa) icon.
 
 ``` html
-<u-button color="primary" icon="create">创建按钮</u-button>
+<u-button color="primary" icon="create">Create Button</u-button>
 ```
 
-### 刷新按钮
+### Refresh Button
 
 ``` html
 <u-button shape="square" icon="refresh"></u-button>
 ```
 
-### 危险按钮
+### Danger Button
+``` html
+<u-button color="danger">Danger Button</u-button>
+```
+
+### Rounded Button
 
 ``` html
-<u-button color="danger">危险按钮</u-button>
+<u-button shape="round">Rounded Button</u-button>
 ```
 
-### 圆角按钮
-
-```
-<u-button shape="round">圆角按钮</u-button>
-```
-
-### 小按钮
+### Small Button
 
 ``` html
-<u-button size="small">小按钮</u-button>
+<u-button size="small">Small Button</u-button>
 ```
 
-一般在页面局部使用。
-
-一般在页面局部使用。
+Generally used locally on the page.
 
 ``` html
-<u-button size="mini">迷你按钮</u-button>
+<u-button size="mini">Mini Button</u-button>
 ```
