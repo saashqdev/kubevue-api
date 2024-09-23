@@ -1,165 +1,165 @@
-<!-- 该 README.md 根据 api.yaml 和 docs/*.md 自动生成，为了方便在 GitHub 和 NPM 上查阅。如需修改，请查看源文件 -->
+<!-- This README.md is automatically generated based on api.yaml and docs/*.md for easy reference on GitHub and NPM. If you need to modify it, please view the source file -->
 
-# USidebar 侧边栏
+# USidebar Sidebar
 
-**路由链接**, **块级展示**
+**Route Links**, **Block Level Display**
 
-通常用于页面左侧的导航栏。
+Typically used for navigation bars on the left side of a page.
 
-## 示例
-### 基本用法
+## Example
+### Basic Usage
 
-#### 路由模式
+#### Routing Mode
 
 ``` html
 <u-sidebar style="width: 200px;">
-    <u-sidebar-item>指南</u-sidebar-item>
-    <u-sidebar-item>概念</u-sidebar-item>
-    <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
+    <u-sidebar-item>Guidelines</u-sidebar-item>
+    <u-sidebar-item>Concept</u-sidebar-item>
+    <u-sidebar-item to="/cloud-ui">Component</u-sidebar-item>
 </u-sidebar>
 ```
 
-#### value模式
+#### Value Mode
 
 ``` html
 <u-sidebar value="3" :router="false" style="width: 200px;">
-    <u-sidebar-item value="1">指南</u-sidebar-item>
-    <u-sidebar-item value="2">概念</u-sidebar-item>
-    <u-sidebar-item value="3">组件</u-sidebar-item>
+    <u-sidebar-item value="1">Guidelines</u-sidebar-item>
+    <u-sidebar-item value="2">Concept</u-sidebar-item>
+    <u-sidebar-item value="3">Component</u-sidebar-item>
 </u-sidebar>
 ```
 
-### 只读、禁用、禁用某一项
+### Read-Only, Disable, Disable an Item
 
 ``` html
 <u-grid-layout>
     <u-grid-layout-column :span="4">
         <u-sidebar disabled>
-            <u-sidebar-item>指南</u-sidebar-item>
-            <u-sidebar-item>概念</u-sidebar-item>
-            <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
+            <u-sidebar-item>Guidelines</u-sidebar-item>
+            <u-sidebar-item>Concept</u-sidebar-item>
+            <u-sidebar-item to="/cloud-ui">Component</u-sidebar-item>
         </u-sidebar>
     </u-grid-layout-column>
     <u-grid-layout-column :span="4">
         <u-sidebar>
-            <u-sidebar-item>指南</u-sidebar-item>
-            <u-sidebar-item disabled>概念</u-sidebar-item>
-            <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
+            <u-sidebar-item>Guidelines</u-sidebar-item>
+            <u-sidebar-item disabled>Concept</u-sidebar-item>
+            <u-sidebar-item to="/cloud-ui">Component</u-sidebar-item>
         </u-sidebar>
     </u-grid-layout-column>
 </u-grid-layout>
 ```
 
-### 分隔符
+### Separator
 
 ``` html
 <u-sidebar style="width: 200px;">
-    <u-sidebar-item>指南</u-sidebar-item>
-    <u-sidebar-item>概念</u-sidebar-item>
-    <u-sidebar-item>配置</u-sidebar-item>
+    <u-sidebar-item>Guidelines</u-sidebar-item>
+    <u-sidebar-item>Concept</u-sidebar-item>
+    <u-sidebar-item>Configuration</u-sidebar-item>
     <u-sidebar-divider></u-sidebar-divider>
-    <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
-    <u-sidebar-item to="/libraries">组件库</u-sidebar-item>
+    <u-sidebar-item to="/cloud-ui">Component</u-sidebar-item>
+    <u-sidebar-item to="/libraries">Component Library</u-sidebar-item>
 </u-sidebar>
 ```
 
-### 分组
+### Grouping
 
 ``` html
 <u-grid-layout>
     <u-grid-layout-row>
         <u-grid-layout-column :span="4">
-            <p>默认，无折叠功能</p>
+            <p>Default, No Folding Function</p>
             <u-sidebar>
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Links</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Tag</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Form">
-                    <u-sidebar-item>单行输入</u-sidebar-item>
-                    <u-sidebar-item>多行输入</u-sidebar-item>
-                    <u-sidebar-item>选择框</u-sidebar-item>
-                    <u-sidebar-item>表单</u-sidebar-item>
+                    <u-sidebar-item>Single-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Multi-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Selection Box</u-sidebar-item>
+                    <u-sidebar-item>Form</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
-            <p>开启折叠功能</p>
+            <p>Turn On the Folding Function</p>
             <u-sidebar collapsible>
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Links</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Tag</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation" expanded disabled>
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Form" :collapsible="false">
-                    <u-sidebar-item>单行输入</u-sidebar-item>
-                    <u-sidebar-item>多行输入</u-sidebar-item>
-                    <u-sidebar-item>选择框</u-sidebar-item>
-                    <u-sidebar-item>表单</u-sidebar-item>
+                    <u-sidebar-item>Single-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Multi-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Selection Box</u-sidebar-item>
+                    <u-sidebar-item>Form</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
-            <p>手风琴模式</p>
+            <p>Accordion Mode</p>
             <u-sidebar collapsible accordion>
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Links</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Tag</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Form">
-                    <u-sidebar-item>单行输入</u-sidebar-item>
-                    <u-sidebar-item>多行输入</u-sidebar-item>
-                    <u-sidebar-item>选择框</u-sidebar-item>
-                    <u-sidebar-item>表单</u-sidebar-item>
+                    <u-sidebar-item>Single-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Multi-Line Input</u-sidebar-item>
+                    <u-sidebar-item>Selection Box</u-sidebar-item>
+                    <u-sidebar-item>Form</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
     </u-grid-layout-row>
     <u-grid-layout-row>
         <u-grid-layout-column :span="4">
-            <p>触发方式：整行点击均可触发（默认）</p>
+            <p>Trigger Method: Clicking the Entire Row can Trigger (default)</p>
             <u-sidebar collapsible expand-trigger="click">
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Links</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Tag</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
-            <p>触发方式：仅点击小箭头时触发</p>
+            <p>Trigger Method: Trigger Only when Clicking the Small Arrow</p>
             <u-sidebar collapsible expand-trigger="click-expander">
                 <u-sidebar-group title="Basic">
-                    <u-sidebar-item>链接</u-sidebar-item>
-                    <u-sidebar-item>按钮</u-sidebar-item>
-                    <u-sidebar-item>标签</u-sidebar-item>
+                    <u-sidebar-item>Links</u-sidebar-item>
+                    <u-sidebar-item>Button</u-sidebar-item>
+                    <u-sidebar-item>Tag</u-sidebar-item>
                 </u-sidebar-group>
                 <u-sidebar-group title="Navigation">
-                    <u-sidebar-item>导航栏</u-sidebar-item>
-                    <u-sidebar-item to="/cloud-ui/u-sidebar">侧边栏</u-sidebar-item>
-                    <u-sidebar-item>标签页</u-sidebar-item>
+                    <u-sidebar-item>Navigation Bar</u-sidebar-item>
+                    <u-sidebar-item to="/cloud-ui/u-sidebar">Sidebar</u-sidebar-item>
+                    <u-sidebar-item>Tab Page</u-sidebar-item>
                 </u-sidebar-group>
             </u-sidebar>
         </u-grid-layout-column>
@@ -167,29 +167,29 @@
 </u-grid-layout>
 ```
 
-### 颜色扩展
+### Color Extensions
 
 ``` html
 <u-grid-layout>
     <u-grid-layout-row>
         <u-grid-layout-column :span="4">
             <u-sidebar style="width: 200px;">
-                <u-sidebar-item>指南</u-sidebar-item>
-                <u-sidebar-item>概念</u-sidebar-item>
-                <u-sidebar-item>配置</u-sidebar-item>
+                <u-sidebar-item>Guidelines</u-sidebar-item>
+                <u-sidebar-item>Concept</u-sidebar-item>
+                <u-sidebar-item>Configuration</u-sidebar-item>
                 <u-sidebar-divider></u-sidebar-divider>
-                <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
-                <u-sidebar-item to="/libraries">组件库</u-sidebar-item>
+                <u-sidebar-item to="/cloud-ui">Component</u-sidebar-item>
+                <u-sidebar-item to="/libraries">Component Library</u-sidebar-item>
             </u-sidebar>
         </u-grid-layout-column>
         <u-grid-layout-column :span="4">
             <u-sidebar style="width: 200px;" color="inverse">
-                <u-sidebar-item>指南</u-sidebar-item>
-                <u-sidebar-item>概念</u-sidebar-item>
-                <u-sidebar-item>配置</u-sidebar-item>
+                <u-sidebar-item>Guidelines</u-sidebar-item>
+                <u-sidebar-item>Concept</u-sidebar-item>
+                <u-sidebar-item>Configuration</u-sidebar-item>
                 <u-sidebar-divider></u-sidebar-divider>
-                <u-sidebar-item to="/cloud-ui">组件</u-sidebar-item>
-                <u-sidebar-item to="/libraries">组件库</u-sidebar-item>
+                <u-sidebar-item to="/cloud-ui">Component</u-sidebar-item>
+                <u-sidebar-item to="/libraries">Component Library</u-sidebar-item>
             </u-sidebar>
         </u-grid-layout-column>
     </u-grid-layout-row>
@@ -197,195 +197,195 @@
 ```
 
 ## USidebar API
-### Props/Attrs
+Props/Attrs
 
 | Prop/Attr | Type | Options | Default | Description |
 | --------- | ---- | ------- | ------- | ----------- |
-| router | boolean |  | `true` | 是否根据vue-router来控制选择哪一项 |
-| value.sync, v-model | any |  |  | 当前选择的值 |
-| collapsible | boolean |  | `false` | 分组是否可以折叠 |
-| accordion | boolean |  | `false` | 是否每次只会展开一个分组 |
-| expand-trigger | string |  | `'click'` | 展开/折叠的触发方式。可选值：`'click'`表示整行点击均可触发、`'click-expander'`表示仅点击小箭头时触发 |
-| readonly | boolean |  | `false` | 是否只读 |
-| disabled | boolean |  | `false` | 是否禁用 |
+| router | boolean | | `true` | Whether to control which item is selected according to vue-router |
+| value.sync, v-model | any | | | The currently selected value |
+| collapsible | boolean | | `false` | Whether the group can be collapsed |
+| accordion | boolean | | `false` | Whether to expand only one group at a time |
+| expand-trigger | string | | `'click'` | Trigger method for expansion/collapse. Optional values: `'click'` means that the entire row can be triggered, `'click-expander'` means that it is triggered only when the small arrow is clicked |
+| readonly | boolean | | `false` | Read-only |
+| disabled | boolean | | `false` | Disabled |
 
 ### Slots
 
 #### (default)
 
-插入`<u-sidebar-item>`、`<u-sidebar-divider>`或`<u-sidebar-group>`子组件。
+Insert a `<u-sidebar-item>`, `<u-sidebar-divider>`, or `<u-sidebar-group>` child component.
 
 ### Events
 
 #### @click
 
-点击此项时触发，与原生 click 事件不同的是，它只会在非只读和禁用的情况下触发。
+Fired when this item is clicked. Unlike the native click event, it will only fire when it is not read-only and disabled.
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event | MouseEvent | 鼠标事件对象 |
-| senderVM | Vue | 发送事件实例 |
+| $event | MouseEvent | Mouse event object |
+| senderVM | Vue | Send event instance |
 
 #### @before-select
 
-选择某一项前触发
+Triggered before an item is selected
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.value | any | 选择项的值 |
-| $event.oldValue | any | 旧的值 |
-| $event.item | object | 选择项相关对象 |
-| $event.itemVM | USidebarItem | 选择项子组件 |
-| $event.preventDefault | Function | 阻止选择流程 |
-| senderVM | Vue | 发送事件实例 |
+| $event.value | any | The value of the selected item |
+| $event.oldValue | any | Old value |
+| $event.item | object | Select item related object |
+| $event.itemVM | USidebarItem | Select item subcomponent |
+| $event.preventDefault | Function | Prevent the selection process |
+| senderVM | Vue | Send event instance |
 
 #### @input
 
-选择某一项时触发
+Triggered when an item is selected
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event | any | 选择项的值 |
-| senderVM | Vue | 发送事件实例 |
+| $event | any | Value of the selection |
+| senderVM | Vue | Send event instance |
 
 #### @select
 
-选择某一项时触发
+Triggered when an item is selected
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.value | any | 改变后的值 |
-| $event.oldValue | any | 旧的值 |
-| $event.item | object | 选择项相关对象 |
-| $event.oldItem | object | 旧的选择项相关对象 |
-| $event.itemVM | USidebarItem | 选择项子组件 |
-| $event.oldVM | USidebarItem | 旧的选择项子组件 |
-| senderVM | USidebar | 发送事件实例 |
+| $event.value | any | Changed value |
+| $event.oldValue | any | Old value |
+| $event.item | object | Select item related object |
+| $event.oldItem | object | Old selection item related object |
+| $event.itemVM | USidebarItem | Select item subcomponent |
+| $event.oldVM | USidebarItem | Old selection item subcomponent |
+| senderVM | USidebar | SendEventInstance |
 
 #### @toggle
 
-展开/折叠某分组时触发
+Triggered when a group is expanded/collapsed
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.expanded | boolean | 展开/折叠状态 |
-| $event.groupVM | USidebarGroup | 分组组件 |
-| senderVM | Vue | 发送事件实例 |
+| $event.expanded | boolean | Expanded/collapsed state |
+| $event.groupVM | USidebarGroup | Grouping components |
+| senderVM | Vue | Send event instance |
 
 ### Methods
 
 #### toggleAll(expanded)
 
-展开/折叠所有分组
+Expand/Collapse All Groups
 
 | Param | Type | Default | Description |
 | ----- | ---- | ------- | ----------- |
-| expanded | boolean |  | 展开/折叠 |
+| expanded | boolean | | Expand/collapse |
 
 ## USidebarItem API
-### Props/Attrs
+Props/Attrs
 
 | Prop/Attr | Type | Options | Default | Description |
 | --------- | ---- | ------- | ------- | ----------- |
-| value | any |  |  | 此项的值 |
-| disabled | boolean |  | `false` | 禁用此项 |
-| item | object |  |  | 相关对象。当选择此项时，抛出的事件会传递该对象，便于开发 |
-| href | string |  |  | 链接地址 |
-| target | string |  |  | 打开方式 |
-| to | string, Location |  |  | 需要 vue-router，与`<router-link>`的`to`属性相同。可以是一个字符串或者是描述目标位置的对象。 |
-| replace | boolean |  | `false` | 需要 vue-router，与`<router-link>`的`replace`属性相同。如果为`true`，当点击时，会调用`router.replace()`而不是`router.push()`，于是导航后不会留下`history `记录。 |
-| exact | boolean |  | `false` | 需要 vue-router，与`<router-link>`的`exact`属性相同。是否与路由完全一致时才高亮显示。 |
+| value | any | | | The value of this item |
+| disabled | boolean | | `false` | Disable this item |
+| item | object | | | Related object. When this option is selected, the thrown event will pass this object, which is convenient for development.
+| href | string | | | Link address |
+| target | string | | | Open method |
+| to | string, Location | | | Requires vue-router, same as `to` property of `<router-link>`. Can be a string or an object describing the target location. |
+| replace | boolean | | `false` | Requires vue-router, same as `replace` property of `<router-link>`. If `true`, when clicked, `router.replace()` will be called instead of `router.push()`, so no `history` record will be left after navigation. |
+| exact | boolean | | `false` | Requires vue-router, same as `exact` property of `<router-link>`. Highlights only when it is exactly the same as the route. |
 
 ### Slots
 
 #### (default)
 
-插入文本或 HTML。
+Insert text or HTML.
 
 ### Events
 
 #### @before-select
 
-选择此项前触发
+Triggered before selecting this item
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.value | any | 此项的值 |
-| $event.item | object | 此项的相关对象 |
-| $event.itemVM | USidebarItem | 此组件 |
-| $event.preventDefault | Function | 阻止选择流程 |
-| senderVM | Vue | 发送事件实例 |
+| $event.value | any | The value of this item |
+| $event.item | object | The object associated with this item |
+| $event.itemVM | USidebarItem | This component |
+| $event.preventDefault | Function | Prevent the selection process |
+| senderVM | Vue | Send event instance |
 
 #### @before-navigate
 
-使用 router 相关属性切换路由前触发
+Triggered before switching routes using router related attributes
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.to | string, Location | `to`属性的值 |
-| $event.replace | boolean | `replace`属性的值 |
-| $event.exact | boolean | `exact`属性的值 |
-| $event.preventDefault | Function | 阻止切换流程 |
-| senderVM | Vue | 发送事件实例 |
+| $event.to | string, Location | The value of the `to` property |
+| $event.replace | boolean | The value of the `replace` property |
+| $event.exact | boolean | The value of the `exact` property |
+| $event.preventDefault | Function | Prevent switching process |
+| senderVM | Vue | Send event instance |
 
 #### @navigate
 
-使用router相关属性切换路由时触发
+Triggered when switching routes using router related attributes
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.to | string, Location | `to`属性的值 |
-| $event.replace | boolean | `replace`属性的值 |
-| $event.exact | boolean | `exact`属性的值 |
-| senderVM | Vue | 发送事件实例 |
+| $event.to | string, Location | The value of the `to` property |
+| $event.replace | boolean | The value of the `replace` property |
+| $event.exact | boolean | The value of the `exact` property |
+| senderVM | Vue | Send event instance |
 
 ## USidebarGroup API
-### Props/Attrs
+Props/Attrs
 
 | Prop/Attr | Type | Options | Default | Description |
 | --------- | ---- | ------- | ------- | ----------- |
-| title | string |  |  | 显示的标题 |
-| collapsible | boolean |  |  | `false` |
-| expanded.sync | boolean |  | `false` | 展开/折叠状态 |
-| disabled | boolean |  | `false` | 是否禁用。禁用时无法展开/折叠 |
+| title | string | | | Displayed title |
+| collapsible | boolean | | | `false` |
+| expanded.sync | boolean | | `false` | Expanded/collapsed state |
+| disabled | boolean | | `false` | Whether to disable. Cannot expand/collapse when disabled |
 
 ### Slots
 
 #### (default)
 
-插入`<u-sidebar-item>`或`<u-sidebar-divider>`子组件。
+Insert a `<u-sidebar-item>` or `<u-sidebar-divider>` child component.
 
-#### title
+#### Title
 
-自定义标题文本。
+Customize the title text.
 
-#### extra
+#### Extra
 
-在右侧可以附加内容。
+Additional content can be added on the right.
 
 ### Events
 
 #### @before-toggle
 
-展开/折叠此分组前触发
+Triggered before expanding/collapse this group
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.expanded | boolean | 展开/折叠状态 |
-| $event.groupVM | USidebarGroup | 分组组件 |
-| $event.preventDefault | Function | 阻止展开/折叠流程 |
-| senderVM | Vue | 发送事件实例 |
+| $event.expanded | boolean | Expanded/collapsed state |
+| $event.groupVM | USidebarGroup | Grouping components |
+| $event.preventDefault | Function | Prevent the expand/collapse process |
+| senderVM | Vue | Send event instance |
 
 #### @toggle
 
-展开/折叠某分组时触发
+Triggered when a group is expanded/collapsed
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.expanded | boolean | 展开/折叠状态 |
-| $event.groupVM | USidebarGroup | 分组组件 |
-| senderVM | Vue | 发送事件实例 |
+| $event.expanded | boolean | Expanded/collapsed state |
+| $event.groupVM | USidebarGroup | Grouping components |
+| senderVM | Vue | Send event instance |
 
 ## USidebarDivider API
 
-暂无
+None

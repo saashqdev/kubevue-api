@@ -4,11 +4,11 @@ import { kebab2Camel, Camel2kebab } from './shared';
 import { stringify } from 'javascript-stringify';
 
 /**
- * 避免同名
- * @param dirPath 目录名
- * @param baseName 文件基本名，不带扩展名，如`u-sample`
- * @param extName 文件扩展名，如`.vue`
- * @return 新的组合路径
+ * Avoid names with the same name
+ * @param dirPath directory name
+ * @param baseName The base name of the file without extension, such as `u-sample`
+ * @param extName file extension, such as `.vue`
+ * @return new combined path
  */
 export function avoidSameName(fullPath: string): string;
 export function avoidSameName(dirPath: string, baseName: string, extName: string): string;
@@ -27,9 +27,9 @@ export function avoidSameName(dirPath: string, baseName?: string, extName?: stri
 }
 
 /**
- * 规范组件名
- * @param componentName 原组件名，可能是驼峰格式，也可能是中划线格式
- * @return baseName 为中划线格式，componentName 为驼峰格式
+ * Standard component name
+ * @param componentName The original component name, which may be in camel case or underscore format
+ * @return baseName is in underscore format, componentName is in camel case format
  */
 export function normalizeName(componentName?: string) {
     let baseName = componentName;
@@ -44,7 +44,7 @@ export function normalizeName(componentName?: string) {
 }
 
 /**
- * 该模块有 eval，慎用，之后考虑去掉。
+ * This module has eval, use it with caution and consider removing it later.
  */
 export const JS = {
     parse(source: string) {

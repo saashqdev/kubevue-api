@@ -8,7 +8,7 @@
     <u-transfer :class="$style.root1" :source="source" :target="target">
         <div v-for="(item, index) in list1" :key="item.id" :title="var2">{{ var2 }}</div>
         <tr v-for="(item, index) in list1" :key="index">
-            <u-input size="huge full" placeholder="请输入区域" v-model="item.region"></u-input>
+            <u-input size="huge full" placeholder="Please enter the region" v-model="item.region"></u-input>
         </tr>
     </u-transfer>
 </div>

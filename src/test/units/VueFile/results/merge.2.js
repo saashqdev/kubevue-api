@@ -82,8 +82,8 @@ export default {
             }
             this.$refs.form
                 .validate()
-                .then(() => this.$toast.show('验证通过，提交成功！'))
-                .catch(() => this.$toast.show('验证失败！'));
+                .then(() => this.$toast.show('Verification passed, submission successful!'))
+                .catch(() => this.$toast.show('Verification failed!'));
         },
     },
 };

@@ -1,18 +1,18 @@
 /**
- * 该模块在 Node.js 端和浏览器端均可运行
+ * This module can run on both the Node.js side and the browser side
  */
 
 /**
- * 中划线格式 -转-> 驼峰格式
- * @param name 原名称
- * @return 转换后的名称
+ * Underline format -convert-> camel case format
+ * @param name original name
+ * @return converted name
  */
-export const kebab2Camel = (name: string) => name.replace(/(?:^|-)([a-zA-Z0-9])/g, (m, $1) => $1.toUpperCase());
+export const kebab2Camel = (name: string) => name.replace(/(?:^|-)([a-zA-Z0-9])/g, (m, $1) => $1.toUpperCase()) ;
 
 /**
- * 驼峰格式 -转-> 中划线格式
- * @param name 原名称
- * @return 转换后的名称
+ * CamelCase format -convert->underline format
+ * @param name original name
+ * @return converted name
  */
 export const Camel2kebab = (name: string) => name.replace(/([A-Z]|[0-9]+)/g, (m, $1, offset) => (offset ? '-' : '') + $1.toLowerCase());
 

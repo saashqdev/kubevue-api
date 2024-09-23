@@ -12,8 +12,8 @@ describe('APIHandler', () => {
         const toc = await apiHandler.getTOCFromFile(path.resolve(BASE_PATH, 'u-button.vue/README.md'), undefined, { maxLevel: 3, minLevel: 4 });
 
         expect(toc.length).to.equal(11);
-        expect(toc[1].title).to.equal('设置形状');
-        expect((toc[1].to as any).hash).to.equal('#设置形状');
+        expect(toc[1].title).to.equal('Set Shape');
+        expect((toc[1].to as any).hash).to.equal('#set shape');
         expect(toc[toc.length - 2].title).to.equal('Slots');
         const events = toc[toc.length - 1];
         expect(events.title).to.equal('Events');

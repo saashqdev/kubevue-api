@@ -1,14 +1,14 @@
-<!-- 该 README.md 根据 api.yaml 和 docs/*.md 自动生成，为了方便在 GitHub 和 NPM 上查阅。如需修改，请查看源文件 -->
+<!-- The README.md is automatically generated based on api.yaml and docs/*.md for easy viewing on GitHub and NPM. If you need to modify, please view the source file -->
 
-# USidebar 侧边栏
+#USidebar Sidebar
 
 <u-toc>
-    <u-toc-item label="基础示例" to="examples">
-        <u-toc-item label="基本用法" :to='{"path":"examples","hash":"#基本用法"}'></u-toc-item>
-        <u-toc-item label="只读、禁用、禁用某一项" :to='{"path":"examples","hash":"#只读-禁用-禁用某一项"}'></u-toc-item>
-        <u-toc-item label="分隔符" :to='{"path":"examples","hash":"#分隔符"}'></u-toc-item>
-        <u-toc-item label="分组" :to='{"path":"examples","hash":"#分组"}'></u-toc-item>
-        <u-toc-item label="颜色扩展" :to='{"path":"examples","hash":"#颜色扩展"}'></u-toc-item>
+    <u-toc-item label="Basic Examples" to="examples">
+        <u-toc-item label="Basic Usage" :to='{"path":"examples","hash":"#Basic usage"}'></u-toc-item>
+        <u-toc-item label="Read-Only, Disable, Disable an Item" :to='{"path":"examples","hash":"#Read-only-disable-disable an item"}' ></u-toc-item>
+        <u-toc-item label="Separator" :to='{"path":"examples","hash":"#separator"}'></u-toc-item>
+        <u-toc-item label="Group" :to='{"path":"examples","hash":"#Group"}'></u-toc-item>
+        <u-toc-item label="Color Extension" :to='{"path":"examples","hash":"#Color Extension"}'></u-toc-item>
     </u-toc-item>
     <u-toc-item label="USidebar API" :to='{"path":"api","hash":"#usidebar-api"}'>
         <u-toc-item label="Props/Attrs" :to='{"path":"api","hash":"#propsattrs"}'></u-toc-item>
@@ -29,12 +29,12 @@
     <u-toc-item label="USidebarDivider API" :to='{"path":"api","hash":"#usidebardivider-api"}'></u-toc-item>
 </u-toc>
 
-<s-component-labels :labels='["路由链接","块级展示"]'></s-component-labels>
+<s-component-labels :labels='["Route link","Block-level display"]'></s-component-labels>
 
-通常用于页面左侧的导航栏。
+Usually used for the navigation bar on the left side of the page.
 
 <u-h2-tabs router>
-    <u-h2-tab title="基础示例" to="examples"></u-h2-tab>
+    <u-h2-tab title="Basic Examples" to="examples"></u-h2-tab>
     <u-h2-tab title="API" to="api"></u-h2-tab>
 </u-h2-tabs>
 <router-view></router-view>
