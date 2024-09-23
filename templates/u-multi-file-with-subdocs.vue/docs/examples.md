@@ -1,12 +1,12 @@
-### 基本形式
+### Basic Form
 
-基本形式是这样的，Balabala。
+The basic form is this, Balabala.
 
 ``` html
 <u-sample some-prop></u-sample>
 ```
 
-### 复杂示例
+### Complex Example
 
 ``` vue
 <template>

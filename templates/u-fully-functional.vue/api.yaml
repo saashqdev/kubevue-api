@@ -1,21 +1,21 @@
 - name: u-sample
-  title: 样本组件
-  description: 请在这里添加描述
+  title: Sample Component
+  description: Please add a description here
   attrs:
     - name: value
       type: number
       default: 0
-      description: 需要传入的值
+      description: The value that needs to be passed in
   slots:
     - name: default
-      description: 插入文本或 HTML。
+      description: Insert text or HTML.
   events:
     - name: change
-      description: 修改时触发
+      description: Triggered when modified
       params:
         - name: $event.param1
           type: string
-          description: 参数1
+          description: Parameter 1
         - name: $event.param2
           type: number
-          description: 参数2
+          description: Parameter 2

@@ -1,24 +1,24 @@
-# USample 样本组件
+# USample Sample Component
 
-这里是样本组件的基本描述。
+Here is a basic description of the sample components.
 
-## 示例
-### 基本形式
+## Example
+### Basic Form
 
-基本形式是这样的，Balabala。
+The basic form is this, Balabala.
 
 ![](screenshots/1.png)
 
-<!-- 这里用`htm`，防止生成 demo -->
-``` htm
+<!-- Use `htm` here to prevent demo generation -->
+```htm
 <u-sample some-prop></u-sample>
 ```
 
-### 复杂示例
+### Complex Example
 
 ![](screenshots/2.png)
 
-<!-- 这里用`htm`，防止生成 demo -->
+<!-- Use `htm` here to prevent demo generation -->
 ``` htm
 <template>
 <u-sample v-model="value">
@@ -42,58 +42,58 @@ export default {
 
 | Prop/Attr | Type | Default | Description |
 | --------- | ---- | ------- | ----------- |
-| v-model, value.sync | Number | `1` | 主要的值 |
-| some | Boolean | `false` | 一些 |
-| other | String | | 其他的 |
-| prop | Array | | 属性 |
-| disabled | Boolean | `false` | 是否禁用 |
+| v-model, value.sync | Number | `1` | Primary value |
+| some | Boolean | `false` | Some |
+| other | String | | Other |
+| prop | Array | | Properties |
+| disabled | Boolean | `false` | Whether to disable |
 
 ### Events
 
 #### @before-action
 
-操作前触发
+Trigger before operation
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.value | String | 传递的值 |
-| $event.content | String | 传递的内容 |
-| $event.preventDefault | Function | 阻止关闭流程 |
-| senderVM | USample | 发送事件实例 |
+| $event.value | String | The value passed |
+| $event.content | String | Passed content |
+| $event.preventDefault | Function | Prevent the shutdown process |
+| senderVM | USample | Send event instance |
 
 #### @action
 
-操作时触发
+Triggered during operation
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.page | Number | 当前页码 |
-| $event.oldPage | Number | 旧的页码 |
-| senderVM | USample | 发送事件实例 |
+| $event.page | Number | Current page number |
+| $event.oldPage | Number | Old page number |
+| senderVM | USample | Send event instance |
 
 #### @change
 
-值改变时触发
+Fires when value changes
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| $event.value | Number | 当前值 |
-| $event.oldValue | Number | 旧的值 |
-| senderVM | UComboPagination | 发送事件实例 |
+| $event.value | Number | Current value |
+| $event.oldValue | Number | Old value |
+| senderVM | UComboPagination | Send event instance |
 
 ### Methods
 
 #### load()
 
-加载。
+Load.
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
 
 ### toggle(expanded)
 
-切换状态。
+Switch status.
 
 | Param | Type | Description |
 | ----- | ---- | ----------- |
-| expanded | Boolean | 展开/折叠 |
+| expanded | Boolean | Expand/collapse |
