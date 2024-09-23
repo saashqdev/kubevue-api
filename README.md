@@ -1,81 +1,65 @@
 # ts-repo-boilerplate
 
-- [README in English](README.md)
+This is an npm repository template.
 
-这是一个 npm 仓库模板。
+## Example
 
-[![CircleCI][circleci-img]][circleci-url]
-[![NPM Version][npm-img]][npm-url]
-[![Dependencies][david-img]][david-url]
-[![NPM Download][download-img]][download-url]
+Showing a simple example can quickly engage readers.
 
-[circleci-img]: https://img.shields.io/circleci/project/github/necfe/ts-repo-boilerplate.svg?style=flat-square
-[circleci-url]: https://circleci.com/gh/necfe/ts-repo-boilerplate
-[npm-img]: http://img.shields.io/npm/v/ts-repo-boilerplate.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/ts-repo-boilerplate
-[david-img]: http://img.shields.io/david/necfe/ts-repo-boilerplate.svg?style=flat-square
-[david-url]: https://david-dm.org/necfe/ts-repo-boilerplate
-[download-img]: https://img.shields.io/npm/dm/ts-repo-boilerplate.svg?style=flat-square
-[download-url]: https://npmjs.org/package/ts-repo-boilerplate
+## Features
 
-## 示例
+Let’s introduce some of the main features of this project.
 
-展示一个简单的示例可以快速吸引读者。
-
-## 特性
-
-介绍一下这个项目主要的几个特性吧。
-
-## 安装
+## Install
 
 ``` shell
 npm install --save-dev ts-repo-boilerplate
 ```
 
-## 选项
+## Options
 
-#### name
+#### Name
 
-某个功能的名称。
+The name of a function.
 
 - Type: `string`
 - Default: `'hello'`
 
-#### auto
+#### Auto
 
-是否自动做某件事。
+Whether to do something automatically.
 
 - Type: `boolean`
 - Default: `'true'`
 
-## 开发
+## Development
 
-### dev
+### Dev
 
 ``` shell
-npm run dev
+npm rundev
 ```
 
-### build
+### Build
 
 ``` shell
 npm run build
 ```
 
-### test
+### Test
 
 ``` shell
 npm run test
 ```
 
-## 修改日志
+## Modification Log
 
-See [Releases](https://github.com/necfe/ts-repo-boilerplate/releases)
+See [Releases](https://github.com/saashqdev/ts-repo-boilerplate/releases)
 
-## 贡献指南
+## Contribution Guidelines
 
-See [Contributing Guide](https://github.com/kubevue/DOCUMENTATION/issues/8)
+See [Contributing Guide](https://github.com/saashqdev/kubevue/DOCUMENTATION/issues/8)
 
-## 开源协议
+## Open Source Agreement
 
 [MIT](LICENSE)
