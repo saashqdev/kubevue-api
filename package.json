@@ -16,7 +16,7 @@
   "main": "./out/index.js",
   "repository": "kubevue/kubevue-api",
   "bugs": {
-    "url": "http://github.com/kubevue/kubevue-api/issues"
+    "url": "http://github.com/saashqdev/kubevue-api/issues"
   },
   "license": "MIT",
   "keywords": [
